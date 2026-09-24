@@ -1,3 +1,5 @@
+OPA CHEFE CUIDADO EM DEIXOU A SENHA DESSE GIT SALVA NO PC DA PUC, DESSA VEZ EU EXCLUI EM, CUIDADO
+
 # Meu Portfólio
 
 Este projeto foi desenvolvido com foco em um portfólio moderno, responsivo e profissional.
