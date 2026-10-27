@@ -2,16 +2,16 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skills = [
-  { name: "HTML", level: 90 },
-  { name: "CSS", level: 85 },
-  { name: "JavaScript", level: 80 },
-  { name: "Python", level: 90 },
-  { name: "React", level: 75 },
-  { name: "Node.js", level: 70 },
-  { name: "SQL", level: 75 },
-  { name: "APIs", level: 85 },
-  { name: "Automação", level: 95 },
-  { name: "Dashboards", level: 85 },
+  { name: "HTML" },
+  { name: "CSS" },
+  { name: "JavaScript" },
+  { name: "TypeScript" },
+  { name: "Python" },
+  { name: "React" },
+  { name: "Java" },
+  { name: "SQL" },
+  { name: "APIs" },
+  { name: "Automação" },
 ];
 
 const SkillsSection = () => {
@@ -27,9 +27,9 @@ const SkillsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-mono text-primary uppercase tracking-widest">Tech Stack</span>
+          <span className="text-xs font-mono text-primary uppercase tracking-widest">Estudo e prática</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-3">
-            Habilidades e <span className="gradient-text">Tecnologias</span>
+            Tecnologias que <span className="gradient-text">exploro</span>
           </h2>
         </motion.div>
 
@@ -40,22 +40,11 @@ const SkillsSection = () => {
               initial={{ opacity: 0, x: idx % 2 === 0 ? -30 : 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.4, delay: idx * 0.08 }}
-              className="group"
+              className="glass-card rounded-lg px-5 py-4"
             >
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm font-medium text-foreground font-mono">{skill.name}</span>
-                <span className="text-xs text-muted-foreground">{skill.level}%</span>
-              </div>
-              <div className="h-2 bg-muted rounded-full overflow-hidden">
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={isInView ? { width: `${skill.level}%` } : {}}
-                  transition={{ duration: 1, delay: 0.3 + idx * 0.08, ease: "easeOut" }}
-                  className="h-full rounded-full bg-gradient-to-r from-primary to-neon-cyan"
-                  style={{
-                    boxShadow: "0 0 10px hsl(217 91% 60% / 0.4)",
-                  }}
-                />
+                <span className="h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
               </div>
             </motion.div>
           ))}

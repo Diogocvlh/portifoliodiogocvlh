@@ -20,7 +20,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-mono font-medium text-primary border border-primary/30 rounded-full neon-border">
-              Full Stack Developer
+              Desenvolvimento de software
             </span>
           </motion.div>
 
@@ -33,7 +33,7 @@ const HeroSection = () => {
             Eu crio{" "}
             <span className="gradient-text">websites</span>,{" "}
             <span className="gradient-text">dashboards</span> e{" "}
-            <span className="gradient-text">automações inteligentes</span>
+            <span className="gradient-text">automações</span>
           </motion.h1>
 
           <motion.p
@@ -42,8 +42,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg text-muted-foreground max-w-xl mb-10 mx-auto lg:mx-0"
           >
-            Desenvolvedor Full Stack focado em soluções digitais para empresas.
-            Transformo ideias em produtos que geram resultados.
+            Projetos de estudo e portfólio em desenvolvimento web e automação.
+            Conheça o código, as tecnologias e as decisões de cada projeto.
           </motion.p>
 
           <motion.div
@@ -78,7 +78,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl animate-pulse-neon" />
             <img
               src={logoImg}
-              alt="Diogo Carvalho - Dev Python"
+              alt="Identidade visual de Diogo Carvalho"
               className="relative z-10 w-full h-full object-contain drop-shadow-2xl"
             />
           </div>

@@ -3,22 +3,22 @@ import { useRef } from "react";
 
 const testimonials = [
   {
-    name: "Cliente Satisfeito",
-    role: "Empresário",
-    text: "Excelente profissional! Entregou o projeto no prazo e com qualidade superior ao esperado. Recomendo para qualquer projeto de automação.",
-    initials: "CS",
+    name: "Organização",
+    role: "Estrutura do projeto",
+    text: "Separar páginas, componentes e utilitários ajuda a entender o código e facilita pequenas mudanças.",
+    initials: "01",
   },
   {
-    name: "Parceiro de Negócio",
-    role: "Gerente de TI",
-    text: "O dashboard que o Diogo criou transformou a forma como analisamos nossos dados. Interface intuitiva e dados em tempo real.",
-    initials: "PN",
+    name: "Verificação",
+    role: "Execução e comportamento",
+    text: "Conferir o build, os estados da interface e as regras ajuda a identificar limitações antes de compartilhar um projeto.",
+    initials: "02",
   },
   {
-    name: "Startup Digital",
-    role: "CEO",
-    text: "Profissional dedicado e extremamente competente. O e-commerce ficou exatamente como imaginamos, moderno e funcional.",
-    initials: "SD",
+    name: "Documentação",
+    role: "Decisões e próximos passos",
+    text: "Registrar como executar a aplicação, o que já funciona e o que está em desenvolvimento torna o projeto mais fácil de avaliar.",
+    initials: "03",
   },
 ];
 
@@ -35,9 +35,9 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-mono text-primary uppercase tracking-widest">Depoimentos</span>
+          <span className="text-xs font-mono text-primary uppercase tracking-widest">Desenvolvimento</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-3">
-            O que <span className="gradient-text">dizem sobre mim</span>
+            Cuidados com <span className="gradient-text">cada projeto</span>
           </h2>
         </motion.div>
 
@@ -50,7 +50,6 @@ const TestimonialsSection = () => {
               transition={{ duration: 0.5, delay: idx * 0.15 }}
               className="glass-card p-6 rounded-xl relative"
             >
-              <div className="text-4xl gradient-text opacity-20 absolute top-4 right-6 font-serif">"</div>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6 relative z-10">
                 {t.text}
               </p>

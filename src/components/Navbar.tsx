@@ -1,13 +1,12 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
 const Navbar = () => {
   const links = [
     { href: "#inicio", label: "Início" },
     { href: "#sobre", label: "Sobre" },
-    { href: "#habilidades", label: "Habilidades" },
+    { href: "#habilidades", label: "Tecnologias" },
     { href: "#projetos", label: "Projetos" },
-    { href: "#servicos", label: "Serviços" },
+    { href: "#servicos", label: "Interesses" },
     { href: "#contato", label: "Contato" },
   ];
 

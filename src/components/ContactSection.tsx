@@ -55,7 +55,7 @@ const ContactSection = () => {
           </a>
 
           <a
-            href="https://github.com/diloco06"
+            href="https://github.com/Diogocvlh"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 px-6 py-4 rounded-xl glass-card hover:neon-border transition-all duration-300 group"
@@ -63,7 +63,7 @@ const ContactSection = () => {
             <span className="text-2xl">🐙</span>
             <div className="text-left">
               <div className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">GitHub</div>
-              <div className="text-xs text-muted-foreground">github.com/diloco06</div>
+              <div className="text-xs text-muted-foreground">github.com/Diogocvlh</div>
             </div>
           </a>
 

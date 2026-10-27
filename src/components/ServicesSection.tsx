@@ -5,22 +5,22 @@ const services = [
   {
     number: "01",
     title: "Desenvolvimento de Websites",
-    description: "Sites modernos, responsivos e otimizados para SEO. Landing pages, portfólios e sites institucionais com design premium.",
+    description: "Estudos de layouts responsivos, navegação e componentes para páginas e aplicações web.",
   },
   {
     number: "02",
     title: "Dashboards e Visualização de Dados",
-    description: "Painéis interativos para monitorar métricas, KPIs e dados do seu negócio em tempo real com gráficos intuitivos.",
+    description: "Interfaces com gráficos e indicadores para explorar a apresentação de dados.",
   },
   {
     number: "03",
     title: "Automação de Processos",
-    description: "Robôs e scripts que automatizam tarefas repetitivas, coleta de dados web e integração entre sistemas e planilhas.",
+    description: "Scripts para praticar automação de tarefas repetitivas e integração entre ferramentas.",
   },
   {
     number: "04",
-    title: "Soluções E-commerce",
-    description: "Lojas virtuais completas com catálogo, carrinho, pagamentos e gestão de pedidos para vender online.",
+    title: "Integração com APIs",
+    description: "Exploração da comunicação entre interfaces, serviços e persistência de dados.",
   },
 ];
 
@@ -37,9 +37,9 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-mono text-primary uppercase tracking-widest">O que eu faço</span>
+          <span className="text-xs font-mono text-primary uppercase tracking-widest">Aprendizado na prática</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-3">
-            Meus <span className="gradient-text">Serviços</span>
+            Áreas de <span className="gradient-text">interesse</span>
           </h2>
         </motion.div>
 

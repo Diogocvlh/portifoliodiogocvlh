@@ -12,6 +12,15 @@ dist
 dist-ssr
 *.local
 
+# Environment files and test output
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+coverage/
+*.tsbuildinfo
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

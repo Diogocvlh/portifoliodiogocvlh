@@ -28,20 +28,18 @@ const AboutSection = () => {
             className="space-y-5"
           >
             <p className="text-muted-foreground leading-relaxed">
-              Sou um desenvolvedor Full Stack apaixonado por tecnologia e automação.
-              Atualmente cursando Engenharia da Computação, combino conhecimento técnico
-              com experiência prática para criar soluções digitais que fazem a diferença.
+              Curso Engenharia de Computação na PUC Goiás e desenvolvo projetos
+              de estudo e portfólio para praticar programação, interfaces e automação.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Especializado em criar <span className="text-foreground font-medium">websites modernos</span>,{" "}
-              <span className="text-foreground font-medium">dashboards interativos</span>,{" "}
-              <span className="text-foreground font-medium">automações inteligentes</span> e{" "}
-              <span className="text-foreground font-medium">soluções de e-commerce</span> que
-              ajudam empresas a otimizar processos e crescer no mercado digital.
+              Tenho interesse em <span className="text-foreground font-medium">desenvolvimento web</span>,{" "}
+              <span className="text-foreground font-medium">visualização de dados</span> e{" "}
+              <span className="text-foreground font-medium">automação de tarefas</span>.
+              Aqui compartilho aplicações, decisões técnicas e o que venho aprendendo.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Minha missão é transformar problemas complexos em soluções elegantes e eficientes,
-              usando as melhores tecnologias disponíveis.
+              Busco construir projetos com organização, documentação e atenção
+              à experiência de quem utiliza a interface.
             </p>
           </motion.div>
 
@@ -52,10 +50,10 @@ const AboutSection = () => {
             className="grid grid-cols-2 gap-4"
           >
             {[
-              { value: "10+", label: "Projetos Entregues" },
-              { value: "2+", label: "Anos de Experiência" },
-              { value: "5+", label: "Tecnologias" },
-              { value: "100%", label: "Comprometimento" },
+              { value: "Web", label: "Interfaces e componentes" },
+              { value: "Dados", label: "Dashboards e visualização" },
+              { value: "Código", label: "Projetos de estudo" },
+              { value: "APIs", label: "Integração entre aplicações" },
             ].map((stat, idx) => (
               <div
                 key={idx}

@@ -2,31 +2,30 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import projectDashboard from "@/assets/project-dashboard.jpg";
 import projectAutomation from "@/assets/project-automation.jpg";
-import projectEcommerce from "@/assets/project-ecommerce.jpg";
 
 const projects = [
   {
-    title: "Dashboard de Análise de Preços",
-    description: "Dashboard interativo para monitoramento de preços de combustíveis com integração Google Sheets e visualização em tempo real.",
+    title: "FieldOps",
+    description: "MVP para gerenciar ordens de serviço, técnicos e distribuição de trabalho, com demonstração local e API Java.",
     image: projectDashboard,
-    stack: ["Python", "Google Sheets API", "Selenium", "Automação"],
-    github: "https://github.com/diloco06",
+    stack: ["React", "TypeScript", "Java", "Spring Boot"],
+    github: "https://github.com/Diogocvlh/fieldops",
     demo: "#",
   },
   {
-    title: "Automação de Processos (TRRs)",
-    description: "Sistema de automação para coleta e atualização de preços de distribuidoras com robôs Selenium e integração de planilhas.",
+    title: "Automação de tarefas",
+    description: "Projeto de automação em Python para explorar coleta de dados e integração com planilhas. Repositório privado.",
     image: projectAutomation,
     stack: ["Python", "Selenium", "Google Auth", "gspread"],
-    github: "https://github.com/Diogocvlh/automa-o",
+    github: null,
     demo: "#",
   },
   {
-    title: "E-commerce Digital",
-    description: "Plataforma de e-commerce completa com catálogo de produtos, carrinho de compras e integração de pagamentos.",
-    image: projectEcommerce,
-    stack: ["React", "Node.js", "SQL", "APIs"],
-    github: "https://github.com/diloco06",
+    title: "Dashboard financeiro",
+    description: "Estudo de interface com indicadores, gráficos de receitas e despesas e transações demonstrativas. Repositório privado.",
+    image: projectDashboard,
+    stack: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
+    github: null,
     demo: "#",
   },
 ];
@@ -62,7 +61,7 @@ const ProjectsSection = () => {
               <div className="relative overflow-hidden h-48">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`Imagem ilustrativa de ${project.title}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                 />
@@ -89,20 +88,23 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 px-4 py-2 text-xs font-medium text-center rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all duration-300"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href={project.demo}
-                    className="flex-1 px-4 py-2 text-xs font-medium text-center rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
-                  >
-                    Live Demo
-                  </a>
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 px-4 py-2 text-xs font-medium text-center rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all duration-300"
+                    >
+                      Código no GitHub
+                    </a>
+                  ) : (
+                    <span className="flex-1 px-4 py-2 text-xs text-center rounded-lg border border-border text-muted-foreground">
+                      Repositório privado
+                    </span>
+                  )}
+                  <span className="flex-1 px-4 py-2 text-xs text-center rounded-lg bg-muted text-muted-foreground">
+                    Demonstração em preparação
+                  </span>
                 </div>
               </div>
             </motion.div>
