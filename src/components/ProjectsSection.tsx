@@ -14,18 +14,18 @@ const projects = [
   },
   {
     title: "Automação de tarefas",
-    description: "Projeto de automação em Python para explorar coleta de dados e integração com planilhas. Repositório privado.",
+    description: "Projeto de automação em Python para explorar coleta de dados e integração com planilhas.",
     image: projectAutomation,
     stack: ["Python", "Selenium", "Google Auth", "gspread"],
-    github: null,
+    github: "https://github.com/Diogocvlh/automacao-planilhas",
     demo: "#",
   },
   {
     title: "Dashboard financeiro",
-    description: "Estudo de interface com indicadores, gráficos de receitas e despesas e transações demonstrativas. Repositório privado.",
+    description: "Protótipo de interface com indicadores, gráficos de receitas e despesas e transações demonstrativas.",
     image: projectDashboard,
     stack: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
-    github: null,
+    github: "https://github.com/Diogocvlh/elegant-financial-dashboard",
     demo: "#",
   },
 ];
@@ -88,20 +88,14 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  {project.github ? (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2 text-xs font-medium text-center rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all duration-300"
-                    >
-                      Código no GitHub
-                    </a>
-                  ) : (
-                    <span className="flex-1 px-4 py-2 text-xs text-center rounded-lg border border-border text-muted-foreground">
-                      Repositório privado
-                    </span>
-                  )}
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 px-4 py-2 text-xs font-medium text-center rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all duration-300"
+                  >
+                    Código no GitHub
+                  </a>
                   <span className="flex-1 px-4 py-2 text-xs text-center rounded-lg bg-muted text-muted-foreground">
                     Demonstração em preparação
                   </span>
